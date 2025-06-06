@@ -1,10 +1,10 @@
-#Money Scam Detector Project Documentation 
+# Money Scam Detector Project Documentation 
 ________________________________________
 	** **Project Overview
 The Money Scam Detector is a rule-based fraud detection system that identifies potential fraudulent activities and scams in online financial transactions and communications. The system is built using the Flask framework for the backend, SQL for data storage, and provides real-time alerts for suspicious activities, such as transactions or emails that exhibit scam-like patterns.
 This project does not rely on machine learning, instead it uses a set of predefined rules to detect scams, making it simpler and more deterministic while still being effective in identifying fraudulent behavior.
 ________________________________________
-	** **Table of Contents
+	** ** Table of Contents
 1.	Introduction
 2.	System Architecture
 3.	Technologies Used
@@ -20,14 +20,14 @@ ________________________________________
 	** ** Introduction
 The Money Scam Detector is designed to help users identify and prevent online financial scams by analyzing transactions and emails for patterns that match common scam indicators. The system provides alerts and notifications when a suspicious activity is detected. This system is particularly useful for individuals and small businesses to protect themselves from potential online fraud.
 ________________________________________
-	** **2. System Architecture
+	** ** 2. System Architecture
 The system is built using a client-server architecture where:
 •	The Flask backend serves as the application server, handling requests from users, detecting fraud patterns, and managing real-time notifications.
 •	The SQL database (PostgreSQL/MySQL) stores all transaction and email data, as well as user details.
 •	The Frontend provides a user-friendly dashboard for users and admins to interact with the system and view flagged transactions, emails, and alerts.
 •	Real-time notifications are sent via Flask-SocketIO for transactions and emails flagged as suspicious.
 ________________________________________
-	** **3. Technologies Used
+	** ** 3. Technologies Used
 •	Backend: Flask (Python web framework)
 •	Frontend: HTML, CSS, JavaScript (React.js or Vue.js)
 •	Database: SQL (PostgreSQL or MySQL)
@@ -35,7 +35,7 @@ ________________________________________
 •	Email Notifications: SendGrid or Flask-Mail
 •	SMS Notifications: Twilio (optional)
 ________________________________________
-	** **4. Features
+	** ** 4. Features
 •	User Registration & Authentication: Secure registration, login, and session management using JWT or Flask-Login.
 •	Transaction Monitoring: Flag suspicious transactions based on predefined rules (e.g., unusually large amounts, frequent transactions).
 •	Email Content Analysis: Detect scam-related keywords and URLs in email content.
@@ -128,13 +128,11 @@ The admin dashboard allows administrators to:
 •	Generate fraud detection performance reports (e.g., false positives, false negatives).
 •	Modify rules to improve fraud detection as new scam patterns are identified.
 _____________________________________
-
-
-#The Result
-
-
-
-
 	** **11. Conclusion
 The Money Scam Detector system is a simple yet effective fraud detection solution built with Flask and SQL. By using rule-based heuristics and predefined patterns, it can reliably detect common scams and flag suspicious transactions and emails. This system is flexible and can be easily expanded by adding more rules or integrating with external services for additional verification.
 Although this project does not use machine learning, its approach remains effective for many types of fraud and is easy to maintain. As new scam patterns emerge, the rule set can be updated to keep the detection system current.
+
+
+# # ![Home Page](https://github.com/user-attachments/assets/a1837fc8-bb17-4c93-b36f-158758f29f4f)
+
+The Result
