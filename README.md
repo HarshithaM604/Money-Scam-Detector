@@ -130,6 +130,10 @@ The admin dashboard allows administrators to:
 _____________________________________
 
 
+#The Result
+
+
+
 
 	** **11. Conclusion
 The Money Scam Detector system is a simple yet effective fraud detection solution built with Flask and SQL. By using rule-based heuristics and predefined patterns, it can reliably detect common scams and flag suspicious transactions and emails. This system is flexible and can be easily expanded by adding more rules or integrating with external services for additional verification.
