@@ -136,3 +136,16 @@ Although this project does not use machine learning, its approach remains effect
 # # ![Home Page](https://github.com/user-attachments/assets/a1837fc8-bb17-4c93-b36f-158758f29f4f)
 
 The Result
+
+# Feature 
+
+![Features](https://github.com/user-attachments/assets/933f34c9-ea82-4d9e-844c-1028876225b4)
+
+# About Us
+
+![About Us](https://github.com/user-attachments/assets/ea5657a7-2498-4cfc-912f-74cf0b252fee)
+
+
+
+
+
