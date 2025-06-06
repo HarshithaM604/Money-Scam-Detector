@@ -1,10 +1,10 @@
-Money Scam Detector Project Documentation 
+#Money Scam Detector Project Documentation 
 ________________________________________
-Project Overview
+	** **Project Overview
 The Money Scam Detector is a rule-based fraud detection system that identifies potential fraudulent activities and scams in online financial transactions and communications. The system is built using the Flask framework for the backend, SQL for data storage, and provides real-time alerts for suspicious activities, such as transactions or emails that exhibit scam-like patterns.
 This project does not rely on machine learning, instead it uses a set of predefined rules to detect scams, making it simpler and more deterministic while still being effective in identifying fraudulent behavior.
 ________________________________________
-Table of Contents
+	** **Table of Contents
 1.	Introduction
 2.	System Architecture
 3.	Technologies Used
@@ -17,17 +17,17 @@ Table of Contents
 10.	Admin Dashboard
 11.	Conclusion
 ________________________________________
-1. Introduction
+	** ** Introduction
 The Money Scam Detector is designed to help users identify and prevent online financial scams by analyzing transactions and emails for patterns that match common scam indicators. The system provides alerts and notifications when a suspicious activity is detected. This system is particularly useful for individuals and small businesses to protect themselves from potential online fraud.
 ________________________________________
-2. System Architecture
+	** **2. System Architecture
 The system is built using a client-server architecture where:
 •	The Flask backend serves as the application server, handling requests from users, detecting fraud patterns, and managing real-time notifications.
 •	The SQL database (PostgreSQL/MySQL) stores all transaction and email data, as well as user details.
 •	The Frontend provides a user-friendly dashboard for users and admins to interact with the system and view flagged transactions, emails, and alerts.
 •	Real-time notifications are sent via Flask-SocketIO for transactions and emails flagged as suspicious.
 ________________________________________
-3. Technologies Used
+	** **3. Technologies Used
 •	Backend: Flask (Python web framework)
 •	Frontend: HTML, CSS, JavaScript (React.js or Vue.js)
 •	Database: SQL (PostgreSQL or MySQL)
@@ -35,7 +35,7 @@ ________________________________________
 •	Email Notifications: SendGrid or Flask-Mail
 •	SMS Notifications: Twilio (optional)
 ________________________________________
-4. Features
+	** **4. Features
 •	User Registration & Authentication: Secure registration, login, and session management using JWT or Flask-Login.
 •	Transaction Monitoring: Flag suspicious transactions based on predefined rules (e.g., unusually large amounts, frequent transactions).
 •	Email Content Analysis: Detect scam-related keywords and URLs in email content.
@@ -45,7 +45,7 @@ ________________________________________
 •	Audit Logs: Track all user actions for auditing and transparency.
 •	Reporting: Generate reports summarizing detected fraud, flagged transactions, and resolution statuses.
 ________________________________________
-5. Backend Design
+	** **5. Backend Design
 The backend is designed to handle:
 •	User Authentication: Secure authentication using Flask-Login or Flask-Security. Passwords are hashed using Flask-Bcrypt.
 •	Transaction Analysis: Transaction data is validated against predefined rules for fraudulent activities.
@@ -53,14 +53,14 @@ The backend is designed to handle:
 •	Alert System: Real-time alerts are sent via WebSockets (Flask-SocketIO) when suspicious activity is detected.
 •	Database Interaction: SQLAlchemy is used to interact with the database, which stores all user, transaction, email, and alert data.
 ________________________________________
-6. Frontend Design
+	** **6. Frontend Design
 The frontend provides a clean and simple interface:
 •	User Dashboard: Displays the user's transaction history, flagged transactions, and their statuses.
 •	Admin Dashboard: Allows admins to view flagged transactions, review and resolve them, and monitor the performance of the scam detection system.
 •	Notifications: Real-time alerts are shown on the frontend as soon as an activity is flagged.
 •	Reports: Users and admins can generate reports summarizing detected scams and fraud patterns.
 ________________________________________
-7. Database Schema
+	** **7. Database Schema
 Below is the SQL schema for the project:
 1.	Users Table:
 o	user_id (Primary Key)
@@ -108,7 +108,7 @@ Admin Endpoints
 •	POST /admin/resolve_transaction: Resolve a flagged transaction (mark it as legitimate or fraudulent).
 •	GET /admin/reports: Generate a report of fraud detection performance.
 ________________________________________
-9. Rule-Based Scam Detection
+	** **9. Rule-Based Scam Detection
 The fraud detection system uses several rules to flag suspicious activities:
 Transaction Rules:
 1.	Large Transactions: Flag transactions that are larger than three times the average transaction amount of the user.
@@ -121,7 +121,7 @@ Email Analysis Rules:
 2.	Suspicious Links: Flag emails that contain URLs known to be linked to phishing or scam websites (using a URL blacklist).
 3.	Phishing Phrases: Flag emails that contain phrases commonly used in phishing attempts, such as “click here” or “verify your account.”
 ________________________________________
-10. Admin Dashboard
+	** **10. Admin Dashboard
 The admin dashboard allows administrators to:
 •	View and review flagged transactions and emails.
 •	Mark transactions as legitimate or fraudulent.
@@ -129,6 +129,8 @@ The admin dashboard allows administrators to:
 •	Modify rules to improve fraud detection as new scam patterns are identified.
 _____________________________________
 
-11. Conclusion
+
+
+	** **11. Conclusion
 The Money Scam Detector system is a simple yet effective fraud detection solution built with Flask and SQL. By using rule-based heuristics and predefined patterns, it can reliably detect common scams and flag suspicious transactions and emails. This system is flexible and can be easily expanded by adding more rules or integrating with external services for additional verification.
 Although this project does not use machine learning, its approach remains effective for many types of fraud and is easy to maintain. As new scam patterns emerge, the rule set can be updated to keep the detection system current.
